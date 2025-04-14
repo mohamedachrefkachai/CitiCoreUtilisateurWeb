@@ -21,6 +21,7 @@ final class DashboardController extends AbstractController
     {
         return $this->render('back/utilisateur/Utilisateur.html.twig');
     }
+    
     #[Route('/dashboard/utilisateur', name: 'InterfaceClient')]
     public function InterfaceClient(): Response
     {
