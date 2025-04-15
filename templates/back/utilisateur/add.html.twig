@@ -1,0 +1,20 @@
+{% extends 'back/Dashboard.html.twig' %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Ajouter un utilisateur</h1>
+
+    {{ form_start(form) }}
+        {{ form_row(form.Cin) }}
+        {{ form_row(form.Nom) }}
+        {{ form_row(form.Prenom) }}
+        {{ form_row(form.Num_Tel) }}
+        {{ form_row(form.Email) }}
+        {{ form_row(form.Genre) }}
+        {{ form_row(form.Mot_De_Passe) }}
+        {{ form_row(form.Role) }}
+        {{ form_row(form.Photo_Utilisateur) }}
+        <button type="submit" class="btn btn-success">Ajouter l'utilisateur</button>
+    {{ form_end(form) }}
+</div>
+{% endblock %}
